@@ -14,9 +14,9 @@ public class Main {
 		window.setResizable(false); // Can Not Resize Window
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Lets the Window Properly Close When User Clicks the Close Button
 		
-		GamePanel gamePanel = new GamePanel();
-		window.add(gamePanel);
-		window.pack();
+		GamePanel gamePanel = new GamePanel(); // Creates Game Panel
+		window.add(gamePanel); // Adds Game Panel to Window
+		window.pack(); // Window Takes Game Panel Dimensions
 	}
 
 }

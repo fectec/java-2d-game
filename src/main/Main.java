@@ -17,6 +17,9 @@ public class Main {
 		GamePanel gamePanel = new GamePanel(); // Creates Game Panel
 		window.add(gamePanel); // Adds Game Panel to Window
 		window.pack(); // Window Takes Game Panel Dimensions
+		
+		gamePanel.startGameThread();
+		
 	}
 
 }

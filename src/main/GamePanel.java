@@ -29,7 +29,7 @@ public class GamePanel extends JPanel implements Runnable {
 	
 	// Player Instantiation
 	
-	Player player = new Player(100, 100, 5, this, keyH);
+	Player player = new Player(100, 100, 5, "down", "/player/boy_up_1.png", "/player/boy_up_2.png", "/player/boy_down_1.png", "/player/boy_down_2.png", "/player/boy_left_1.png", "/player/boy_left_2.png", "/player/boy_right_1.png", "/player/boy_right_2.png", this, keyH);
 
 	public GamePanel() {
 		

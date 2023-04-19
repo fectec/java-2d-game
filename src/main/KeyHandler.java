@@ -1,21 +1,19 @@
 package main;
 
-import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.awt.event.KeyEvent;
 
-public class KeyHandler implements KeyListener{
+public class KeyHandler implements KeyListener {
 	
 	public boolean upPressed, downPressed, leftPressed, rigthPressed;
-	
-	@Override
-	
+		
 	public void keyTyped(KeyEvent e) {}
 
 	@Override
 	
 	public void keyPressed(KeyEvent e) {
 
-		int keyCode = e.getKeyCode(); // Returns the Integer keyCode Associated with the Key in this Event
+		int keyCode = e.getExtendedKeyCode(); // Returns the Integer keyCode Associated with the Key in this Event
 		
 		if(keyCode == KeyEvent.VK_W)
 		{
@@ -40,7 +38,7 @@ public class KeyHandler implements KeyListener{
 	
 	public void keyReleased(KeyEvent e) {
 		
-		int keyCode = e.getKeyCode();
+		int keyCode = e.getExtendedKeyCode();
 		
 		if(keyCode == KeyEvent.VK_W)
 		{

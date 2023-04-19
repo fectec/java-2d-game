@@ -19,6 +19,7 @@ public class Main {
 		window.pack(); // Window Takes Game Panel Dimensions
 		
 		gamePanel.startGameThread();
+		gamePanel.requestFocus();
 		
 	}
 
